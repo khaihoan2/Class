@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        C;
+        F;
+        kevin;
+
+        constructor(c, f, kevin) {
+            this.C = c;
+            this.F = f;
+            this.kevin = kevin;
+        }
+
+        getC() {
+            return this.C;
+        }
+
+        getF() {
+            return Math.PI * 5 / 9 * this.C + 32;
+        }
+
+        getKevin() {
+            return Math.PI * this.C + 273.15;
+        }
+    }
+
+    let myTemperature = new Temperature(25, this.F, 273.15);
+    let F = myTemperature.getF();
+    let Kevin = myTemperature.getKevin();
+    alert("F: " + F )
+    alert("Kevin: " + Kevin)
+</script>
+</body>
+</html>
