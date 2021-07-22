@@ -14,7 +14,9 @@
             this.radius = radius;
             this.color = color;
         }
-
+        getColor(){
+            return this.color
+        }
         getCircle() {
             return "";
         }
@@ -27,6 +29,11 @@
             return Math.PI * this.radius * this.radius;
         }
     }
+    let Circle1 =new Circle(2);
+    let radius = Circle1.getRadius();
+    let area = Circle1.getArea();
+    alert("area"+area)
+    alert("radius"+radius)
 </script>
 </body>
 </html>
